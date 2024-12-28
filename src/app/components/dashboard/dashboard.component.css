@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 3em 3em 1.6em;
+    padding: 1em;
+}
+
+ a {
+    text-decoration: none;
+    color: inherit; 
+}

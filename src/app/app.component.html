@@ -1,0 +1,11 @@
+
+
+
+<div class="layout">
+  <app-top-nav (toggleSidenav)="toggleSidenav()"></app-top-nav>
+  <app-side-nav [isOpen]="isSidenavOpen"></app-side-nav>
+  <main class="main-content" [class.shifted]="isSidenavOpen">
+  <router-outlet></router-outlet>
+    <!-- <ng-content></ng-content> -->
+  </main>
+</div>

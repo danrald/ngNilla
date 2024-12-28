@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>Simple Angular Binding Techniques</h1>
+
+    <!-- Interpolation -->
+    <section class="binding-section">
+      <h2>1. Interpolation Binding</h2>
+      <p>Welcome, {{ username }}!</p>
+      <p>Current time: {{ getCurrentTime() }}</p>
+    </section>
+
+    <!-- Property Binding -->
+    <section class="binding-section">
+      <h2>2. Property Binding</h2>
+      <img [src]="imageUrl" [alt]="imageAlt" [style.width.px]="imageWidth">
+      <p>Click the "Click Me" counter over ten times to disable</p>
+      <button [disabled]="isButtonDisabled">
+        This button is {{ isButtonDisabled ? 'disabled' : 'enabled' }}
+      </button>
+    </section>
+
+    <!-- Event Binding -->
+    <section class="binding-section">
+      <h2>3. Event Binding</h2>
+      <button (click)="incrementCounter()">Click me!</button>
+      <p>Counter: {{ counter }}</p>
+      <div 
+        (mouseover)="handleMouseOver()" 
+        (mouseout)="handleMouseOut()"
+        [style.background-color]="backgroundColor"
+        class="hover-box">
+        Hover over me!
+      </div>
+    </section>
+
+    <!-- Two-way Binding -->
+    <section class="binding-section">
+      <h2>4. Two-way Binding</h2>
+      <input [(ngModel)]="username" placeholder="Enter your name">
+      <p>Name in real-time: {{ username }}</p>
+
+      <select [(ngModel)]="selectedColor">
+        <option value="">Choose a color</option>
+        <option *ngFor="let color of colors" [value]="color">{{ color }}</option>
+      </select>
+      <div class="color-preview" [style.background-color]="selectedColor">
+        Selected color: {{ selectedColor || 'None' }}
+      </div>
+    </section>
+  </div>

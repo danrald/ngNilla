@@ -1,0 +1,28 @@
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #34495e;
+    line-height: 1.6;
+  }
+
+  .layout {
+    min-height: 100vh;
+  }
+
+  .main-content {
+    margin-top: 60px;
+    padding: 2rem;
+    transition: margin-left 0.3s ease;
+  }
+
+  .main-content.shifted {
+    margin-left: 250px;
+  }

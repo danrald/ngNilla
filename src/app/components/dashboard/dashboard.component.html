@@ -1,0 +1,14 @@
+
+<H1>Component Frameworks</H1>
+<div class="container">  
+    @if (loading) {
+      <p>Loading frameworks...</p>
+    } @else {
+      
+        @for (framework of frameworks; track framework.id) {
+          <div >
+            <a href="{{framework.url}}" target="_blank">{{framework.name}}</a> 
+          </div>
+        }
+    }
+</div>

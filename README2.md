@@ -1,0 +1,1 @@
+push to github ng deploy --base-href=/NgShell/
