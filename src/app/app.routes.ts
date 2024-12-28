@@ -5,6 +5,7 @@ import { BindingsComponent } from './components/bindings/bindings.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { AccountComponent } from './components/account/account.component';
 import { PreferencesComponent } from './components/preferences/preferences.component';
+import { RealtimeComponent } from './components/realtime/realtime.component';
 
 export const routes: Routes = [ 
     
@@ -12,6 +13,7 @@ export const routes: Routes = [
     {path: 'dashboard', component: DashboardComponent },
     {path: 'bindings', component: BindingsComponent },
     {path: 'tasks', component: TasksComponent },
+    {path: 'realtime', component: RealtimeComponent },
     {path: 'account', component: AccountComponent},
     {path: 'preferences', component:PreferencesComponent}
     ];

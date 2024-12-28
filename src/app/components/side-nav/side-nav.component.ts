@@ -13,6 +13,7 @@ import { RouterLink } from '@angular/router';
           <a  routerLink="/dashboard" routerLinkActive="active" class="nav-item">Dashboard</a>
           <a  routerLink="/bindings" routerLinkActive="active" class="nav-item">Bindings</a>
           <a  routerLink="/tasks" routerLinkActive="active" class="nav-item">Tasks</a>
+          <a  routerLink="/realtime" routerLinkActive="active" class="nav-item">Real Time</a>
         </div>
         <div class="nav-group">
           <h3>Settings</h3>
