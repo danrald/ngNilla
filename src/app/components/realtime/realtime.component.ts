@@ -135,7 +135,11 @@ export class RealtimeComponent implements AfterViewInit, OnDestroy {
     // chart.appear(1000, 100);
  }
   ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
+    this.browserOnly(() => {
+      if (this.root) {
+        this.root.dispose();
+      }
+    });
   }
   ngAfterViewInit(): void {
     this.browserOnly(() => {
