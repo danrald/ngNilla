@@ -7,6 +7,9 @@
     "build": "ng build"
   },
   "dependencies": {
+    "@amcharts/amcharts5": "^5.10.10",
+    "@amcharts/amcharts5-fonts": "^5.0.1",
+    "@amcharts/amcharts5-geodata": "^5.1.4",
     "@angular/animations": "^19.0.1",
     "@angular/common": "^19.0.1",
     "@angular/compiler": "^19.0.1",
