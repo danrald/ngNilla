@@ -13,7 +13,8 @@ export const routes: Routes = [
     {path: 'dashboard', component: DashboardComponent },
     {path: 'bindings', component: BindingsComponent },
     {path: 'tasks', component: TasksComponent },
-    {path: 'realtime', component: RealtimeComponent },
+    // {path: 'realtime', component: RealtimeComponent },
+    {path: 'realtime',loadComponent: () => import('./components/realtime/realtime.component').then(c => c.RealtimeComponent)},
     {path: 'account', component: AccountComponent},
     {path: 'preferences', component:PreferencesComponent}
     ];

@@ -5,6 +5,7 @@ import * as am5xy from '@amcharts/amcharts5/xy';
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
 
 import { isPlatformBrowser } from '@angular/common';
+import { StreamedvaluesService } from './services/streamedvalues.service';
 
 @Component({
   selector: 'app-realtime',
@@ -23,8 +24,12 @@ export class RealtimeComponent implements AfterViewInit, OnDestroy {
     }
   }
   
-  constructor(@Inject(PLATFORM_ID) private platformId: Object, private zone: NgZone) {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private zone: NgZone, private addValue: StreamedvaluesService) {
+
     
+    addValue.data$.subscribe( x => {
+      console.log(x);
+    })
 
  }
  
